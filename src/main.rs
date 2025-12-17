@@ -1,6 +1,8 @@
+use scraper::{Html , Selector};
 #[tokio::main]
 async fn main() {
-    let response = reqwest::get("").await.unwrap().text().await.unwrap();
-    println!("{}" , response);
+    let html = reqwest::get("https://example.com").await.unwrap().text().await.unwrap();
+    
+    println!("{}" , html);
     println!("Hello, world!");
 }
