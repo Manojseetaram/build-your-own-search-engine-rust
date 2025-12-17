@@ -6,3 +6,5 @@ cd project_name
 cargo add reqwest --features json
 cargo add tokio --features full
 
+3. Step Three
+cargo add scraper
